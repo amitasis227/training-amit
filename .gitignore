@@ -1,4 +1,20 @@
+# Secrets — never commit Supabase/DB credentials
 .streamlit/secrets.toml
-.DS_Store
-__pycache__
+*.env
+.env.*
+
+# Local databases (e.g. leftover SQLite files)
 *.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Editor/tooling
+.claude/settings.local.json
